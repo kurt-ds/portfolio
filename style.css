@@ -1,0 +1,27 @@
+:root {
+  --primary-color: #581908;
+}
+
+.logo-icon {
+  height: 2.5rem;
+  cursor: pointer;
+}
+
+.header-icon {
+  height: 2.5rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 14rem;
+  border-bottom: 1px solid rgba(39, 12, 7, 0.3);
+}
+
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+}
