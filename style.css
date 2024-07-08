@@ -1,5 +1,17 @@
 :root {
   --primary-color: #581908;
+  --text-color: #0E0301;
+  --background-color: #FFF8F6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Roboto',sans-serif;
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 .logo-icon {
@@ -24,4 +36,68 @@ header {
 .social-links {
   display: flex;
   gap: 1rem;
+}
+
+
+.hero-image-container>img {
+  width: 38rem;
+}
+
+.hero-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+  width: 40rem;
+}
+
+h2 {
+  font-size: 2.188rem;
+  font-weight: bold;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 3.125rem;
+}
+
+#hero-name {
+  color: transparent;
+  background-image: linear-gradient(to right, #581908, #A26150);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  margin: 10rem 14rem;
+  margin-bottom: 8rem;
+  justify-content: space-between;
+}
+
+.nav-list ul {
+  width: min-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.563rem;
+  border: 5px solid var(--primary-color);
+  margin-top: 1rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+}
+
+.nav-list ul>li {
+  padding: 1rem 1.5rem;
+  letter-spacing: 1px;
+  transition: .3s ease all;
+}
+
+.nav-list ul>li:hover {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+
+article {
+  height: 100vh;
 }
