@@ -2,6 +2,7 @@
   --primary-color: #581908;
   --text-color: #0E0301;
   --background-color: #FFF8F6;
+  --secondary-color: #AD7E76;
 }
 
 html {
@@ -98,6 +99,44 @@ main {
   color: var(--background-color);
 }
 
-article {
-  height: 100vh;
+#about {
+  background-color: var(--secondary-color);
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 14rem;
+  gap: 3rem;
 }
+
+article>h1 {
+  text-align: center;
+}
+
+article p {
+  font-size: 1.25rem;
+}
+
+.about-image-container>img {
+  width: 25rem;
+  border: .5rem solid var(--primary-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 39px 0 rgba(0, 0, 0, .4);
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.about-text-container {
+  width: 70rem;
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+
