@@ -7,6 +7,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -41,7 +42,7 @@ header {
 
 
 .hero-image-container>img {
-  width: 38rem;
+  width: 35rem;
 }
 
 .hero-text-container {
@@ -72,7 +73,6 @@ main {
   display: flex;
   align-items: center;
   margin: 10rem 14rem;
-  margin-bottom: 8rem;
   justify-content: space-between;
 }
 
@@ -100,11 +100,20 @@ main {
 }
 
 #about {
+  padding-top: 5rem;
+}
+.about-container {
   background-color: var(--secondary-color);
   display: flex;
   flex-direction: column;
   padding: 5rem 14rem;
   gap: 3rem;
+  margin-top: 3rem;
+  margin-bottom: 10rem;
+}
+
+.about-container>h1 {
+  text-align: center;
 }
 
 article>h1 {
@@ -130,7 +139,10 @@ article p {
 
 
 .about-text-container {
-  width: 70rem;
+  width: 55rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 .about-text {
@@ -140,3 +152,195 @@ article p {
 }
 
 
+#certification-button {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  padding: 1rem 1.5rem;
+  font-size: 1.563rem;
+  font-weight: bold;
+  border-radius: 0.75rem;
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, .3);
+  cursor: pointer;
+  transition: .3s ease-in-out all;
+}
+
+#resume-button {
+  outline: 5px solid var(--primary-color);
+  outline-offset: -5px;
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  font-size: 1.563rem;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, .3);
+  transition: .3s ease-in-out all;
+}
+
+.about-button-container {
+  display: flex;
+  gap: 3rem;
+}
+
+#certification-button:hover {
+  background-color: #904b38;
+  transform: scale(1.05);
+}
+
+#resume-button:hover {
+  transform: scale(1.05);
+}
+
+.skills-content-container {
+  background-color: var(--secondary-color);
+  margin-left: 14rem;
+  margin-right: 14rem;
+  height: 40rem;
+  border-radius: 1rem;
+  position: relative;
+}
+
+.skills-container {
+  background-color: var(--background-color);
+  height: 32rem;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+
+.skill-buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 7rem;
+}
+
+
+.skill-buttons>button {
+  font-size: 2.188rem;
+  border: none;
+  padding: 1.5rem 3rem 2rem 3rem;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0);
+  z-index: 1;
+  position: relative;
+  transition: .3s ease-in-out all;
+}
+
+.skill-buttons>button:hover {
+  transform: translateY(1.1);
+}
+
+.frontend-skills, .backend-skills, .machinelearning-skills, .othertools-skills {
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 52rem;
+}
+
+
+.hidden {
+  display: none !important;
+}
+
+.skill-card {
+  flex: 0 0 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.skill-card>p {
+  font-size: 1.25rem;
+}
+
+.skill-card>img {
+  height: 8rem;
+}
+
+.active {
+  background: var(--background-color) !important;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+
+#skills {
+  padding-top: 5rem;
+  display: flex;
+  gap: 5rem;
+  flex-direction: column;
+  margin-bottom: 10rem;
+}
+
+#projects {
+  padding-top: 5rem;
+  margin-left: 14rem;
+  margin-right: 14rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin-bottom: 10rem;
+}
+
+
+.project-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.project-card {
+  background-color: var(--secondary-color);
+  width: 28rem;
+  height: 40rem;
+  border-radius: 1rem;
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, .3);
+}
+
+#contact {
+  padding-top: 5rem;
+  margin-left: 14rem;
+  margin-right: 14rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  margin-bottom: 10rem;
+}
+
+
+.contact-container {
+  display: flex;
+  height: 30rem;
+}
+
+.contact-info {
+  outline-offset: -5px;
+  outline: 5px solid var(--secondary-color);
+  width: 50%;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.contact-form {
+  background-color: var(--secondary-color);
+  width: 50%;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+
+
+footer {
+  background-color: var(--secondary-color);
+  width: 100%;
+  padding-left: 14rem;
+  padding-right: 14rem;
+  height: 10rem;
+}
