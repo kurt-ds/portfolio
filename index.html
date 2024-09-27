@@ -13,12 +13,13 @@
 </head>
 <body>
   <header>
+    <div class="underline"></div>
     <img src="/public/icon.svg" alt="Logo Icon" class="logo-icon">
 
     <div class="social-links" >
-      <img src="/public/resume.svg" alt="Resume Icon" class="header-icon">
+      <a href="certifications/resume.pdf" target="_blank"><img src="/public/resume.svg" alt="Resume Icon" class="header-icon"></a>
       <img src="/public/linkedin.svg" alt="Resume Icon" class="header-icon">
-      <img src="/public/github.svg" alt="Resume Icon" class="header-icon">
+      <a href="https://github.com/kurt-ds" target="_blank"><img src="/public/github.svg" alt="Resume Icon" class="header-icon"></a>
     </div>
   </header>
   <main>
@@ -48,11 +49,9 @@
 
   <article id="about" >
     <div class="about-container">
+      <div class="about-background"></div>
       <h1>About</h1>
       <div class="about-content">
-        <div class="about-image-container">
-          <img src="/public/love.gif" alt="Love Computer GIF">
-        </div>
         <div class="about-text-container" >
           <div class="about-text" >
             <p>
@@ -65,10 +64,13 @@
             <p>
             Let's connect and build something amazing together!
             </p>
-          </div>
-          <div class="about-button-container" >
-            <a href="#certifications" id="certification-button">Certifications</a>
-            <a href="#resume" id="resume-button" >Resume</a>
+            <div class="certification-list" >
+              <p class="title">Certifications 📝:</p>
+              <ul>
+                <li><a href="certifications/webdeveloper.pdf" target="_blank">Web Development Bootcamp 2023 <img src="public/new.svg" alt="New Window SVG"></a></li>
+                <li><a href="certifications/databases.pdf" target="_blank">Databases - Information Technology Specialist <img src="public/new.svg" alt="New Window SVG"></a></li>
+              </ul>
+            </div>
           </div>
         </div> 
       </div>
@@ -183,25 +185,141 @@
         </div>
       </div>
     </div>
-  </article>
+  </article> 
   <article id="projects">
     <h1>Projects</h1>
     <div class="project-container" >
-      <div class="project-card"></div>
-      <div class="project-card"></div>
-      <div class="project-card"></div>
+      <div class="project-card">
+        <div class="project-card-image">
+          <img src="public/yelpcamp.png" alt="Yelpcamp Screenshot">
+        </div>
+        <div class="project-card-content">
+          <h3>YelpCamp</h3>
+          <p>It’s a full-stack web application built with Express and Node.js, allowing users to discover and share campgrounds based on reviews and ratings.</p>
+          <div class="project-stack">
+            <p>HTML5</p>
+            <p>CSS3</p>
+            <p>JavaScript</p>
+            <p>Boostrap</p>
+            <p>MongoDB</p>
+            <p>Express</p>
+            <p>NodeJS</p>
+            <p>Render</p>
+          </div>
+  
+          <p class="note">Note: This was hosted for free. Give it some time to load.</p>
+  
+          <div class="project-info"> 
+            <a href="https://yelpcamp-kurtds.onrender.com" class="livedemo-btn" target="_blank">Live Demo</a>
+            <a href="https://github.com/kurt-ds/YelpCamp" class="github-btn" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+      <div class="project-card">
+        <div class="project-card-image">
+          <img src="public/bookly.png" alt="Bookly Screenshot">
+        </div>
+        <div class="project-card-content">
+          <h3>Book.ly</h3>
+          <p>A full-stack web application built with PHP, MySQL, HTML, CSS, and JavaScript, facilitates book review and management. It allows users to create reviews of each other's books.</p>
+          <div class="project-stack">
+            <p>HTML5</p>
+            <p>CSS3</p>
+            <p>JavaScript</p>
+            <p>PHP</p>
+            <p>MySQL</p>
+            <p>000webhost</p>
+          </div>
+          <p class="note">Note: This was hosted for free. Give it some time to load.</p>
+
+          <div class="project-info"> 
+            <a href="https://bookly2023.000webhostapp.com/" class="livedemo-btn" target="_blank">Live Demo</a>
+            <a href="https://github.com/kurt-ds/book_review" class="github-btn" target="_blank">GitHub</a>
+          </div>
+        </div>
+      
+      </div>
+      <div class="project-card">
+        <div class="project-card-image">
+          <img src="public/moondust.png" alt="Moondust Screenshot">
+        </div>
+
+        <div class="project-card-content">
+          <h3>Moondust</h3>
+          <p>Allows admins with CRUD product management, while users can add items to cart and place orders built with PHP, MySQL, HTML, CSS, and JavaScript.</p>
+          <div class="project-stack">
+            <p>HTML5</p>
+            <p>CSS3</p>
+            <p>JavaScript</p>
+            <p>PHP</p>
+            <p>MySQL</p>
+            <p>000webhost</p>
+          </div>
+  
+          <p class="note">Note: This was hosted for free. Give it some time to load.</p>
+  
+          <div class="project-info"> 
+            <a href="https://moondust2024.000webhostapp.com" class="livedemo-btn" target="_blank">Live Demo</a>
+            <a href="https://github.com/kurt-ds/moondust" class="github-btn" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+      </div>
     </div>
   </article>
   <article id="contact">
     <h1>Contact</h1>
     <div class="contact-container">
-      <div class="contact-info"></div>
-      <div class="contact-form"></div>
+      <div class="contact-info">
+        <h2>Let's get in touch</h2>
+        <p>I'm actively seeking new opportunities to learn and grow as a developer. I'd love to hear from you! Feel free to contact me!</p>
+
+        <div class="information-stack">
+          <div>
+            <img src="public/location.svg" alt="Location SVG"><p>Silang, Cavite Philippines</p>
+          </div>
+
+          <div>
+            <img src="public/email.svg" alt="Email SVG">
+            <p>allenkurtds.dev@gmail.com</p>
+          </div>
+          <div>
+            <img src="public/phone.svg" alt="Phone SVG">
+            <p>(+63) 995-234-3963</p>
+          </div>
+        </div>
+
+        <p>Connect with me:</p>
+
+        <div class="social-links">
+          <img src="/public/linkedin.svg" alt="LinkedIN Icon" class="header-icon">
+          <a href="https://github.com/kurt-ds" target="_blank"><img src="/public/github.svg" alt="Github Icon" class="header-icon"></a>
+        </div>
+      </div>
+      <div class="contact-form-container">
+        <h2>Contact Me</h2>
+        <form class="contact-form" action="">
+          <div>
+            <input type="text" name="username" placeholder="Username">
+          </div>
+          <div>
+            <input type="email" name="email" placeholder="Email">
+          </div>
+          <div>
+            <textarea name="message" id="message" placeholder="Message"></textarea>
+          </div>
+          <button>SEND</button>
+        </form>
+      </div>
     </div>
   </article>
 
+
   <footer>
-    
+    <div>
+      <p>&#64;Copyright 2024. Made by Allen Kurt.</p>
+      <p>Made with 🤎</p>
+    </div>
   </footer>
   <script src="./app.js" ></script>
 </body>
