@@ -235,6 +235,10 @@ article p {
   transition: .3s ease-in-out all;
 }
 
+#machinelearning-button {
+  display: none;
+}
+
 .skill-buttons>button:hover {
   transform: translateY(1.1);
 }
@@ -248,6 +252,10 @@ article p {
   width: 52rem;
 }
 
+
+.machinelearning-skills {
+  display: none;
+}
 
 .hidden {
   display: none !important;
@@ -707,7 +715,17 @@ footer p {
     font-size: 12px;
   }
 
-  main, #about, #skills, #projects, #contact {
+  header {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #about, #skills, #projects, #contact {
     padding-left: 4rem;
     padding-right: 4rem;
   }
@@ -725,6 +743,12 @@ footer p {
   .skill-buttons > button {
     font-size: 1rem;
     padding: 1rem 0.5rem 1.5rem 0.5rem;
+  }
+
+  .hero-text-container {
+    margin-left: auto;
+    justify-content: center;
+    width: 100%;
   }
 }
 
