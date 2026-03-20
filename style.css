@@ -198,14 +198,14 @@ article p {
 
 .skills-content-container {
   background-color: var(--secondary-color);
-  height: 40rem;
+  height: 42rem;
   border-radius: 1rem;
   position: relative;
 }
 
 .skills-container {
   background-color: var(--background-color);
-  height: 32rem;
+  height: 35rem;
   position: absolute;
   bottom: 1.5rem;
   left: 1.5rem;
@@ -245,11 +245,12 @@ article p {
 
 .frontend-skills, .backend-skills, .machinelearning-skills, .othertools-skills {
   margin-top: 1rem;
-  flex-wrap: wrap;
-  display: flex;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(5, fit-content(4rem));
+  width: 100%;
   justify-content: center;
-  gap: 1rem;
-  width: 52rem;
+  gap: 0.5rem;
 }
 
 
